@@ -1,0 +1,30 @@
+<script> 
+var votos = 0, voto, carlos = 0, lucas = 0, robson = 0, leo = 0, nulo = 0, branco = 0;
+for(i = 1; i< 5; i++){
+   do{ voto = prompt('vote nos candidados\ncarlos(33)\nlucas(55)\nrobson(22)\nleo(11)\ncaso nao queira votar vote nulo(00) ou branco(branco)')
+
+}while (voto == null || voto == '');
+
+    if(voto == 33){
+        carlos++
+        alert('obrigado pelo voto');
+}else if(voto == 55){
+         lucas++
+         alert('obrigado pelo voto');
+}else if(voto == 22){
+         robson++
+         alert('obrigado pelo voto');
+}else if(voto == 11){
+         leo++
+         alert('obrigado pelo voto');
+}else if(voto == 00){
+         nulo++
+         alert('obrigado pelo voto');
+}else if(voto == branco){
+         branco++
+         alert('obrigado pelo voto');
+}           
+}
+alert('votos no total\ncarlos ' + carlos );
+
+</script>

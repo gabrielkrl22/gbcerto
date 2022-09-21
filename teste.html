@@ -1,0 +1,31 @@
+<script>
+     var numeros = new Array(num1, num2, num3, num4, num5, num6);
+     
+while(continua){
+ numeros[0] = Math.floor((Math.random() * 59) + 1);
+ numeros[1] = Math.floor((Math.random() * 59) + 1);
+ numeros[2] = Math.floor((Math.random() * 59) + 1);
+ numeros[3] = Math.floor((Math.random() * 59) + 1);
+ numeros[4] = Math.floor((Math.random() * 59) + 1);
+ numeros[5] = Math.floor((Math.random() * 59) + 1);
+
+if((numeros[0] == numeros[1]) || (numeros[0] == numeros[2]) || (numeros[0] == numeros[3]) || (numeros[0] == numeros[4]) || (numeros[0] == numeros[5])){
+   continua = true;   
+} else if((numeros[1] == numeros[2]) || (numeros[1] == numeros[3]) || (numeros1 == numeros[4]) || (numeros[1] == numeros[5])){
+   continua = true;
+} else if((numeros[2] == numeros[3]) || (numeros[2] == numeros[4]) || (numeros[2] == numeros[5])){
+   continua = true;
+} else if((numeros[3] == numeros[4]) || (numeros[3] == numeros[4])){
+   continua = true;
+} else if((numeros[4] == numeros[5])){
+   continua = true;
+} else {
+   continua = false
+}
+}
+
+document.write('<b>OS NUMEROS DA SORTE SAO: </b><br><br>');
+for(i = 0; i < numeros.length; i++){
+    document.write(numeros[i] + '<br>');
+     }
+</script>
